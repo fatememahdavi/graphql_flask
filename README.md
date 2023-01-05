@@ -1,5 +1,5 @@
-# GraphQl in Flask
-Python | Flask | GraphQl
+# GraphQL in Flask
+Python | Flask | GraphQL
 
 (Sample data added for fun :blush:)
 <img src="./doc/graphql_interface.png" width="100%"/>
