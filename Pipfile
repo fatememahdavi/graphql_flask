@@ -1,0 +1,22 @@
+[[source]]
+    name = "pypi"
+    url = "https://pypi.org/simple"
+    verify_ssl = true
+
+[dev-packages]
+    pylint = "*"
+    mypy = "*"
+
+[packages]
+    Flask==2.2.2
+    Flask-GraphQL==2.0.1
+    Flask-Migrate==4.0.0
+    Flask-SQLAlchemy==3.0.2
+    graphene==2.1.9
+    graphene-sqlalchemy==2.3.0
+    python-dotenv==0.21.0
+    SQLAlchemy==1.4.45
+    passlib==1.7.4
+
+[requires]
+    python_version = "3.8"
