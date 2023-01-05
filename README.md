@@ -27,19 +27,39 @@ SQLALCHEMY_COMMIT_ON_TEARDOWN = True
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 ```
 
-- Set Secret_Key,SQLALCHEMY_DATABASE_URI, ... according to your system
-
  - To run the app:
 ```
  python app.py
 ```
- - To view and create queries in the Graphql Apis interface:
+ - To run queries in the Graphql Apis interface:
 ```
  {BaseUrl}/graphql-api
 ```
-## Example
-<img src="./doc/graphql_interface.png" width="128"/>
-<p align="center">
-  <img src="./doc/graphql_interface.png" width="350" title="hover text">
-</p>
+## Example 
+- Mutation
+```
+mutation {
+  addUser(name: "test", password: "012345", email: "test@test.com", phone: "00000000000", roleId: 1, teamId: 1) {
+    user {
+      name
+      phone
+    }
+  }
+}
+```
+- Query
+```
+{
+  getTeamById(name: "team-test") {
+    name
+  }
+  users{
+    name
+    email
+    phone
+  }
+}
+```
 
+(Sample data added for fun :blush:)
+<img src="./doc/graphql_interface.png" width="100%"/>
