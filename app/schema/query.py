@@ -12,19 +12,19 @@ class Query(graphene.ObjectType):
     users = graphene.List(UserObject)
     getUserById = graphene.Field(UserObject, id=graphene.Int())
     teams = graphene.List(TeamObject)
-    getTeamById = graphene.Field(TeamObject, name=graphene.String())
+    getTeamByName = graphene.Field(TeamObject, name=graphene.String())
     roles = graphene.List(RoleObject)
-    getRoleById = graphene.Field(RoleObject, name=graphene.String())
+    getRoleByName = graphene.Field(RoleObject, name=graphene.String())
 
     def resolve_getUserById(self, info, id):
         query = UserObject.get_query(info)
         return query.filter(UserModel.id == id).first()
 
-    def resolve_getTeamById(self, info, name):
+    def resolve_getTeamByName(self, info, name):
         query = TeamObject.get_query(info)
         return query.filter(TeamModel.name == name).first()
 
-    def resolve_getRoleById(self, info, name):
+    def resolve_getRoleByName(self, info, name):
         query = RoleObject.get_query(info)
         return query.filter(RoleModel.name == name).first()
 

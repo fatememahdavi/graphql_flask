@@ -53,7 +53,7 @@ mutation {
 - Query
 ```
 {
-  getTeamById(name: "team-test") {
+  getTeamByName(name: "team-test") {
     name
   }
   users{
