@@ -38,4 +38,8 @@ SQLALCHEMY_TRACK_MODIFICATIONS = True
  {BaseUrl}/graphql-api
 ```
 ## Example
+<img src="./doc/graphql_interface.png" width="128"/>
+<p align="center">
+  <img src="./doc/graphql_interface.png" width="350" title="hover text">
+</p>
 
