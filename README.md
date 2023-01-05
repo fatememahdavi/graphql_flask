@@ -1,5 +1,8 @@
 # GraphQl in Flask
-sample Project | Python | Flask | GraphQl
+Python | Flask | GraphQl
+
+(Sample data added for fun :blush:)
+<img src="./doc/graphql_interface.png" width="100%"/>
 
 ## Requirements
 - Python3
@@ -60,6 +63,3 @@ mutation {
   }
 }
 ```
-
-(Sample data added for fun :blush:)
-<img src="./doc/graphql_interface.png" width="100%"/>
